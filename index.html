@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" rel="stylesheet">
+	<title>Cadastro de Notas</title>
+
+<body>
+
+	<div class="container">
+		<h1>Cadastro de Notas</h1>
+		<form id="f_cadastro" class="form" name="f_cad">
+			<div>
+				<label class="title">Nome</label>
+				<input type="text" name="f_nom" value="">
+			</div>
+			<div>
+				<label class="title">RGM</label>
+				<input type="text" name="f_rgm" value="">
+			</div>
+			<div>
+				<label class="title">Nota parcial (máximo 2 pontos)</label>
+				<input type="text" name="f_par" value="">
+			</div>
+			<div>
+				<label class="title">Nota exercícios (máximo 1 ponto)</label>
+				<input type="text" name="f_exe" value="">
+			</div>
+			<div>
+				<label class="title">Nota projeto (máximo 2 pontos)</label>
+				<input type="text" name="f_proj" value="">
+			</div>
+			<div>
+				<label class="title">Nota regimental (máximo 5 pontos)</label>
+				<input type="text" name="f_reg" value="">
+			</div>
+			<div class="buttons">
+				<button type="button" onclick="cadastrar()">
+					Cadastrar
+				</button>
+				<button type="button" onclick="exibirDados()">
+					Mostrar
+				</button>
+			</div>
+		</form>
+
+		<div id="tabela"></div>
+	</div>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
