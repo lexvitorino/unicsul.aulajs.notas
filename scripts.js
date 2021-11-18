@@ -96,17 +96,21 @@ function exibirDados() {
 
     var table = `
         <table>
-            <tr>
-                <th>Nome</th>
-                <th>RGM</th>
-                <th>Nota parcial</th>
-                <th>Nota exercícios</th>
-                <th>Nota projeto</th>
-                <th>Nota regimental</th>
-                <th>Nota Final</th>
-                <th>Resultado</th>
-            </tr>
-            ${itens}
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>RGM</th>
+                    <th>Nota parcial</th>
+                    <th>Nota exercícios</th>
+                    <th>Nota projeto</th>
+                    <th>Nota regimental</th>
+                    <th>Nota Final</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+                ${itens}
+            </tbody>
         </table>
     `;
 
